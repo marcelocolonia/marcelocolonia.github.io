@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The difference between engineering and game design | Marcelo Colonia</title>
+  <meta name="description" content="A lesson about feature creep, game design, and why I removed treasure rooms from my roguelike prototype.">
+
+  <meta property="og:title" content="Marcelo Colonia">
+  <meta property="og:description" content="Game development notes, design thoughts, and devlogs.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Patua+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <a class="site-title" href="index.html">Marcelo Colonia</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../projects.html">Projects</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </header>
+
+<main>
+
+    <article>
+
+        <h1>Systems Are Fun</h1>
+
+        <p><em>June 6, 2026</em></p>
+
+        <p>I've been working on a new prototype.</p>
+
+        <p>
+            The idea is simple: an autobattler where you move from room to room,
+            kill enemies, die, spend points on upgrades, and start over. Each run gets
+            a little further until you survive long enough to fight the area's boss.
+            Defeat the boss, move on to the next area. Simple.
+        </p>
+
+		<figure>
+			<img src="../images/autobattler-gameplay-1.gif" alt="Gameplay">
+			<figcaption>Still a long way from looking presentable, I know</figcaption>
+		</figure>
+	  
+        <p><strong>The funny thing is that I play games too.</strong></p>
+
+        <p>
+            These days I have a lot less time for gaming than I used to. Long RPGs and
+            100-hour adventures rarely make it onto my list anymore. As a husband,
+            father to a lovely toddler (and a second kid on the way), and someone with
+            a full-time 9-5 job, I find myself gravitating towards shorter
+            experiences.
+        </p>
+
+        <p>
+            Games like <a href="https://store.steampowered.com/app/3107330/Nodebuster/" target="_blank" rel="noopener noreferrer">Nodebuster</a>, <a href="https://store.steampowered.com/app/3868720/Doomfields/" target="_blank" rel="noopener noreferrer">Doomfields</a>, and <a href="https://store.steampowered.com/app/1282730/Loop_Hero/" target="_blank" rel="noopener noreferrer">Loop Hero</a> are perfect for that.
+            I get a little hit of dopamine, make some progress, and call it a night.
+        </p>
+
+        <p>
+            I wanted this prototype to be the same way. Small in scope. Something I
+            could actually finish.
+        </p>
+
+        <p>
+            I've been working on it for about two weeks now, and that's when the
+            familiar thoughts started creeping in.
+        </p>
+
+        <blockquote>
+            <p>"What if I added treasure rooms like Doomfields?"</p>
+            <p>"What about event rooms like Slay the Spire?"</p>
+        </blockquote>
+
+        <p>
+            Designing and implementing those systems sounded fun. Honestly, they were
+            fun. But every new idea pushed the project further away from being playable.
+        </p>
+
+		<figure>
+			<img src="../images/autobattler-skilltree.gif" alt="My crude skill tree">
+			<figcaption>Skill trees are way more fun to make than it looks</figcaption>
+		</figure>
+
+        <p>
+            Before long, I realized I was building systems instead of building a game.
+        </p>
+
+        <p>
+            I've been a software engineer for nearly thirty years, so I suppose this
+            comes naturally. I enjoy solving technical problems. I enjoy finding the
+            right architecture, the right design pattern, the reusable and extensible
+            solution.
+        </p>
+
+        <p>My brain immediately jumps to questions like:</p>
+
+        <blockquote>
+            <p>"What if I want equipment?"</p>
+            <p>"What if I add workbenches?"</p>
+            <p>"What if I want a crafting system like The Last of Us?"</p>
+        </blockquote>
+
+        <p>
+            Thinking about those systems is exciting. Building them is satisfying.
+        </p>
+
+        <p>
+            But every now and then I need to remind myself of something important:
+        </p>
+
+        <blockquote>
+            <p>
+                A good architecture doesn't necessarily make a good game.
+            </p>
+        </blockquote>
+
+        <p>
+            Players don't care that my code is elegant. They care whether the game is
+            fun.
+        </p>
+
+        <p>
+            So the treasure rooms are gone. The event rooms are gone too. The game is
+            simpler than it was a week ago. And I think it's better for it.
+        </p>
+
+		<p class="tags">
+			<a href="../blog.html">#gamedev</a>
+			<a href="../blog.html">#devlog</a>
+			<a href="../blog.html">#scope</a>
+		</p>
+    </article>
+  
+  </main>
+
+
+  <footer>
+    <p>© Marcelo Colonia. Built with plain HTML and CSS.</p>
+  </footer>
+</body>
+</html>
