@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Starting Over Was the Best Decision I Made | Marcelo Colonia</title>
+	
+  <meta name="description" content="Three months, one complete restart, and countless lessons. Reflections on developing Miles Deep, embracing a simpler art style, and why sometimes starting over is the fastest way forward.">
+
+  <meta property="og:title" content="Marcelo Colonia">
+  <meta property="og:description" content="Game development notes, design thoughts, and devlogs.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Patua+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <a class="site-title" href="index.html">Marcelo Colonia</a>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../projects.html">Games</a>
+      <a href="../about.html">About</a>
+    </nav>
+  </header>
+
+<main>
+
+    <article>
+	
+	
+	    <h1>Starting Over Was the Best Decision I Made</h1>
+
+        <p><em>July 30, 2026</em></p>
+		
+		<p>Sometimes you have to take two steps back, then another step back, just to move one step forward. That doesn't make much sense, but bear with me.</p>
+
+		<p>Today I released the first free chapter of <a href="https://pixelarmygames.itch.io/miles-deep" target="_blank" rel="noopener noreferrer">Miles Deep</a> on Itch. I've been working on it for about three months now. It's a small demo, but I've learned far more than I expected along the way.</p>
+		
+		<p>The game takes inspiration from clickers and autobattlers like <strong>Nodebuster</strong> and <strong>Loot Loop</strong>, wrapped in a <strong>Super Contra/Metal Slug</strong> vibe with a healthy dose of Lovecraft. I just can't seem to make a game without some cosmic horror creeping in.</p>
+		
+		<figure>
+			<img src="../images/miles_deep_01.gif" alt="Isolation">
+			<figcaption>NES-like and I love it </figcaption>
+		</figure>
+		
+		<p>Most of those three months weren't spent designing gameplay, but rather trying to answer a much harder question: <strong>how do I make this thing look good enough?</strong>
+		
+		<p>The original plan was ambitious. I'd build 3D environments in Blender and render 2D billboarded sprites inside them. In my head it sounded perfect. I already knew a bit of Blender, I'd draw some NES-style sprites in Aseprite, and everything would magically come together.</p>
+		
+		<p>There were only two small problems.</p>
+
+		<p>- I'm shite at art.</p>
+		<p>- Those 3D models still need textures, and I'm shite at art.</p>
+
+		<p>In my naivety I was imagining something closer to <strong>Octopath Traveler</strong> (a serious endeavor even for someone with good art skills). It didn't take long to realise I wasn't even remotely close to having the artistic ability to pull that off.</p>
+		
+		<p>The technical side wasn't helping either. Each character lived inside a Godot SubViewport, rendering a small 2D scene containing sprites, particles, muzzle flashes, and other effects. It worked, but every time I wanted to tweak a character I found myself fighting the editor instead of making progress. There may well have been a better workflow, I just couldn't find it.</p>
+
+		<p>The more I struggled with the art, the more obvious it became that I was solving the wrong problem. So I scrapped the whole thing, seven weeks in, and started again. This time in full 2D, baby!</p>
+
+		<figure>
+			<img src="../images/aseprite_01.jpg" alt="Isolation">
+			<figcaption>How much pain can one fit into 32x40 pixels?</figcaption>
+		</figure>
+
+		<p>That decision changed everything. I reduced the game's resolution to 320×240 and embraced a much simpler visual style. Suddenly my crude pixel art stopped looking out of place. Of course, that meant redesigning the UI and reworking the controls. More rework, yay.</p>
+
+		<p>To save time I also leaned on a couple of excellent asset packs.</p>
+		
+		<p>The icons came from <a href="https://free-game-assets.itch.io" target="_blank" rel="noopener noreferrer">Free Game Assets</a>, while the scene transitions are from <a href="https://binbun3d.itch.io/godot-modular-transitions" target="_blank" rel="noopener noreferrer">Godot Modular Transitions</a> by Binbun.</p>
+		
+		<p>It all costed me less than a good burger while saving me a ton of time. Past me might have insisted on building everything myself, current me would rather spend that time making the game better.</p>
+
+		<p>One thing that <strong>did</strong> pay off was reusing systems from previous projects. The upgrade framework from <a href="https://store.steampowered.com/app/4465720/Planet_Flipper/" target="_blank" rel="noopener noreferrer">Planet Flipper</a> carried over surprisingly well. Turning it into a proper skill tree, however, was a lot more work than I anticipated. There were plenty of late nights involved, but I now have a flexible system that I'll almost certainly reuse again.</p>
+		
+		<p>Getting the game running on Itch.io was pleasantly uneventful. Apart from a handful of last-minute bugs, exporting a web build in Godot was quite straightforward. Seeing it run in a mobile browser for the first time was one of those little moments that makes all the frustration worthwhile.</p>
+		
+		<figure>
+			<img src="../images/miles_deep_02.gif" alt="Isolation">
+			<figcaption>Decent UI is still a pain to build</figcaption>
+		</figure>		
+		
+		<p>Today adding new content is easier than it's ever been. Characters, skills, buffs, timed effects... the underlying systems are all there. Unsurprisingly, the thing that still takes me the longest is drawing the sprites. But I'm decided to practice more and get better at it. This whole experience made me gain a renewed sense of respect to all pixel artists out there.</p>
+
+		<p>At this precise moment in time I sure as hell can't make a beautiful game, but I'm more confident I can make deep, scalable systems.</p>
+		
+		<p><strong>Miles Deep</strong> is still a small project, but it finally feels like a game I can keep building instead of endlessly rebuilding. I have plenty of ideas for where this little adventure is heading. I just hope enough people decide to come along for the ride.</p>
+		
+		<p>You can play the first chapter for free on Itch:</p>
+
+		<a href="https://pixelarmygames.itch.io/miles-deep" target="_blank" rel="noopener noreferrer">https://pixelarmygames.itch.io/miles-deep</a>
+		
+		<p class="tags">
+			<a href="../blog.html">#gamedev</a>
+			<a href="../blog.html">#post-mortem</a>
+			<a href="../blog.html">#devlog</a>
+		</p>
+    </article>
+  
+  </main>
+
+
+  <footer>
+    <p>© Marcelo Colonia. Built with plain HTML and CSS.</p>
+  </footer>
+</body>
+</html>
